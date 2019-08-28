@@ -1,0 +1,15 @@
+{
+  "name": "whiteprompt-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gmourelle <guido.mourelle@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "api": "cd api && yarn start",
+    "start": "start yarn run api & yarn run client",
+    "installApi": "cd api & yarn install",
+    "installClient": "cd client & yarn install",
+    "build": "yarn run installApi & yarn run installClient"
+  }
+}
